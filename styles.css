@@ -7,7 +7,7 @@
 
 body {
     margin: 0;
-    background: rgb(30, 30, 65);
+    background-color: var(--color-background);
 }
 
 header {
@@ -15,6 +15,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background: linear-gradient(#1b7ff180, #58a1f580 ) ;
 }
 
 .logo {
@@ -62,9 +67,10 @@ nav a {
 .carrousel-container {
     position: relative;
     width: 100%;
-    height: 400px;    
+    height: 665px;    
     /*background: gray;*/
-    padding: 0px; 
+    padding: 0px;
+    z-index: 0;
 }
 
 .carrousel-images {
@@ -83,6 +89,23 @@ nav a {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.column {
+
+    background-color: red;
+
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    color: white;
 }
 
 .btn-left, .btn-right {
@@ -117,4 +140,67 @@ nav a {
 .btn-left img , .btn-right img{
     width: 24px;
     height: 24px;
+}
+
+
+/* WAVES*/
+
+.waves {
+    display: block;
+    margin-top: 60px;
+    width: 100%;
+    height: 60px;
+    z-index: 5;
+    position: relative;
+}
+
+.wave1 use {
+    fill: rgba(255,255,255, .1);
+    animation: move-forever1 10s linear infinite;
+    animation-delay: -2s;
+}
+
+.wave2 use {
+    fill: rgba(255,255,255, .2);
+    animation: move-forever2 8s linear infinite;
+    animation-delay: -2s;
+}
+
+.wave3 use {
+    fill: var(--color-background);
+    animation: move-forever3 6s linear infinite;
+    animation-delay: -2s;
+}
+
+@keyframes move-forever1 {
+    0% {
+    transform: translate(85px, 0%);
+    }
+    100% {
+    transform: translate(-90px, 0%);
+    }
+}
+
+@keyframes move-forever2 {
+    0% {
+    transform: translate(-90px, 0%);
+    }
+    100% {
+    transform: translate(85px, 0%);
+    }
+}
+
+@keyframes move-forever3 {
+    0% {
+    transform: translate(-90px, 0%);
+    }
+    100% {
+    transform: translate(85px, 0%);
+    }
+}
+
+
+/* ROOT */
+:root {
+    --color-background: rgb(30, 30, 65); 
 }
