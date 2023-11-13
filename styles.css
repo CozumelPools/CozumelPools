@@ -310,7 +310,7 @@ nav a {
     left: 10px;
     right: 10px;
     bottom: 10px;
-    height: 55px;
+    height: 60px;
 }
 
 .card .details h2 {
@@ -323,9 +323,11 @@ nav a {
     line-height: 1.15em;
 }
 
-.card .details h2 span {
+.card .details ul {
     font-weight: 400;
     font-size: 15px;
+    text-align: center;
+    margin-bottom: 1px;
 }
 
 /* ROOT */
