@@ -56,6 +56,24 @@ nav a {
     font-weight: 700;
 }
 
+.cta__service {
+    padding: 4px 8px;
+    background: cornflowerblue;
+    border-radius: 5px;
+    margin: 0px 3rem 0;
+    list-style: none;
+}
+
+.cta__service:hover {
+    background-color: rgb(0, 47, 255);
+}
+
+.cta__service a {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+}
+
 .heroShot, .services {
     display: flex;
     justify-content: center;    
@@ -296,7 +314,7 @@ nav a {
 }
 
 .card .details h2 {
-    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 0;
     font-weight: 900;
     font-size: 20px;
@@ -308,7 +326,6 @@ nav a {
 .card .details h2 span {
     font-weight: 400;
     font-size: 15px;
-    color: #0dac4f;
 }
 
 /* ROOT */
