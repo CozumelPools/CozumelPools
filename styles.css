@@ -233,7 +233,7 @@ nav a {
 }
 
 /* CARDS */
-.container {
+.container__ {
     display: flex;
     grid-template-columns: 1fr 1fr 1fr;
 }
