@@ -10,6 +10,11 @@ body {
     background-color: var(--color-background);
 }
 
+h2 {
+    font-size: medium;
+    font-weight: bold;
+}
+
 ::-webkit-scrollbar {
     background-color: transparent;
     width: 8px;
@@ -20,6 +25,23 @@ body {
     background-color: #002c72;
     border-radius: 10px;
     border: 1px solid transparent;
+}
+
+.mov {
+    display: none;
+}
+
+.desk {
+    display: block;
+}
+
+@media only screen and (max-width: 640px) {
+    .desk {
+        display: none;
+    }
+    .mov {
+        display: block;
+    }
 }
 
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ HEADER ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
@@ -258,10 +280,10 @@ nav ul li:last-child a:hover {
 }
 
 .cta__service a {
-    padding: 4px 8px;
+    padding: 4px 18px;
     background: var(--color-button);
-    border-radius: 5px;
-    color: white;
+    border-radius: 10px;
+    color: black;
     font-weight: 700;
     text-decoration: none;   
 }
@@ -361,8 +383,6 @@ nav ul li:last-child a:hover {
     .card .details h2 {
         margin-bottom: 5px;
         padding: 0;
-        font-weight: 900;
-        font-size: 20px;
         color: #101010;
         text-align: center;
         line-height: 1.15em;
