@@ -45,12 +45,13 @@ nav a {
 
 .cta__call {
     padding: 8px 16px;
-    background-color: yellow;
+    background-color: var(--color-button);
     border-radius: 5px;
 }
 
 .cta__call:hover {
-    background-color: orangered;
+    background-color: var(--color-button-hover);
+    color: white;
 }
 
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ HEROSHOT SECTION ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
@@ -63,19 +64,6 @@ nav a {
 .cta__call a {
     color: black;
     font-weight: 700;
-}
-
-.cta__service a {
-    padding: 4px 8px;
-    background: cornflowerblue;
-    border-radius: 5px;
-    color: white;
-    font-weight: 700;
-    text-decoration: none;   
-}
-
-.cta__service a:hover {
-    background-color: rgb(0, 47, 255);
 }
 
 /* Carrousel*/
@@ -238,6 +226,19 @@ nav a {
     overflow: hidden;
 }
 
+.cta__service a {
+    padding: 4px 8px;
+    background: var(--color-button);
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;   
+}
+
+.cta__service a:hover {
+    background-color: var(--color-button-hover);
+}
+
 /* ----------- CARDS ------------ */
 
 
@@ -346,8 +347,9 @@ nav a {
 /* ROOT */
 :root {
     --color-background: rgb(30, 30, 65); 
-    --color-button: ;
-    --color-
+    --color-button: cornflowerblue;
+    --color-button-hover: rgb(7, 46, 216);
+    --color-cta: ;
 }
 
 
