@@ -155,7 +155,7 @@ nav ul li:last-child a:hover {
 }
 
 .btn-left:hover, .btn-right:hover {
-    background-color: #5a5aa0d4;
+    background-color: var(--color-button);
     color: #fff;
 }
 
