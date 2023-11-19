@@ -7,7 +7,7 @@
 
 body {
     margin: 0;
-    background-color: var(--color-background);
+    background-color: var(--background);
 }
 
 h2 {
@@ -80,7 +80,7 @@ nav li:hover {
 
 nav a {
     text-decoration: none;
-    color: white;
+    color: var(--white-color);
     font-weight: bold;
 }
 
@@ -89,20 +89,20 @@ nav a:hover {
 }
 
 nav ul li:last-child a:hover {
-    color: black;
+    color: var(--black-color);
 }
 
 .cta__call {
     padding: 8px 16px;
-    background-color: var(--color-button);
+    background-color: var(--secondary-background);
     border-radius: 50px;
     box-shadow: var(--shadow-color);
     transition: transform 0.2s ease, box-shadow 0.2s ease;;
 }
 
 .cta__call:hover {
-    background-color: var(--color-button-hover);
-    color: white;
+    background-color: var(--secondary-hover);
+    color: var(--white-color);
     transform: translateY(-5px);
     box-shadow: var(--shadow-color-hover);
 }
@@ -115,7 +115,7 @@ nav ul li:last-child a:hover {
 }
 
 .cta__call a {
-    color: black;
+    color: var(--black-color);
     font-weight: 700;
 }
 
@@ -152,7 +152,7 @@ nav ul li:last-child a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     align-items: center;
-    color: white;
+    color: var(--white-color);
     width: 100%;
 }
 
@@ -169,7 +169,7 @@ nav ul li:last-child a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     align-items: center;
-    color: white;
+    color: var(--white-color);
 }
 
 .btn-left, .btn-right {
@@ -189,7 +189,7 @@ nav ul li:last-child a:hover {
 }
 
 .btn-left:hover, .btn-right:hover {
-    background-color: var(--color-button);
+    background-color: var(--secondary-background);
     color: #fff;
 }
 
@@ -239,7 +239,7 @@ nav ul li:last-child a:hover {
 }
 
 .wave3 use {
-    fill: var(--color-background);
+    fill: var(--background);
     animation: move-forever3 6s linear infinite;
     animation-delay: -2s;
 }
@@ -281,15 +281,15 @@ nav ul li:last-child a:hover {
 
 .cta__service a {
     padding: 4px 18px;
-    background: var(--color-button);
+    background: var(--secondary-background);
     border-radius: 10px;
-    color: black;
+    color: var(--black-color);
     font-weight: 700;
     text-decoration: none;   
 }
 
 .cta__service a:hover {
-    background-color: var(--color-button-hover);
+    background-color: var(--secondary-hover);
 }
 
 /* ----------- CARDS ------------ */
@@ -395,12 +395,27 @@ nav ul li:last-child a:hover {
         margin-bottom: 1px;
     }
 
-/* ROOT */
+/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ ROOT ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
 :root {
-    --color-background: #9dc3ee; 
-    --color-button: #2fc1ff;
-    --color-button-hover: hsl(200, 100%, 80%);
-    --color-cta: ;
+    --background: #9dc3ee;
+    --black-color: rgb(32, 32, 32);
+    --white-color: white;
+
+    --primary-background: ;
+    --primary-hover: ;
+    --primary: green ; /* primary text */
+
+    --secondary-background: #2fc1ff;
+    --secondary-hover: hsl(200, 100%, 80%);
+    --secondary: red ; /* seundary text */
+
+    --acent-background: ;
+    --acent-hover: ;
+    --acent: ; /* acent text */
+
+    --mutted: gray;
+    --mutted-text: #303030 ;
+
     --shadow-color: 2px 2px 2px rgba(0, 0, 0, 0.5);
     --shadow-color-hover: 2px 5px 2px rgba(0, 0, 0, 0.5);
 }
@@ -415,23 +430,13 @@ nav ul li:last-child a:hover {
     transform: translateY(-2px)
 }
 
-/*
-1037px - media query tablet - checar
+/* Notes:
 
-    screens: {
+    screens:
     'sm': '640px',
-      // => @media (min-width: 640px) { ... }
-
     'md': '768px',
-      // => @media (min-width: 768px) { ... }
-
     'lg': '1024px',
-      // => @media (min-width: 1024px) { ... }
-
     'xl': '1280px',
-      // => @media (min-width: 1280px) { ... }
-
     '2xl': '1536px',
-      // => @media (min-width: 1536px) { ... }
 
 */
