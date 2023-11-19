@@ -56,22 +56,17 @@ nav a {
     font-weight: 700;
 }
 
-.cta__service {
+.cta__service a {
     padding: 4px 8px;
     background: cornflowerblue;
     border-radius: 5px;
-    margin: 0px 3rem 0;
-    list-style: none;
-}
-
-.cta__service:hover {
-    background-color: rgb(0, 47, 255);
-}
-
-.cta__service a {
-    color: black;
+    color: white;
     font-weight: 700;
-    text-decoration: none;
+    text-decoration: none;   
+}
+
+.cta__service a:hover {
+    background-color: rgb(0, 47, 255);
 }
 
 .heroShot {
@@ -245,38 +240,24 @@ nav a {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 15px; /* cambiar valor*/
-    grid-template-areas: 
-    "box1 box2 box3 box4";
+
 }
 
 .box {  /* GREEN*/
-
     margin-top: 1.3rem;
-    /* justify-content: center;
-    align-items: center; */
     padding: 10px;
 }
 
-#box1 {
-    grid-area: box1;
+@media only screen and (max-width: 640px) { /* media query movil*/
+    .container__ {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1px; /* cambiar valor a 0*/
+    }
 }
 
-#box2 {
-    grid-area: box2;
-}
-
-#box3 {
-    grid-area: box3;
-}
-
-#box4 {
-    grid-area: box4;
-}
-
-    .card {
+.card {
         position: relative; /* para sus hijos*/
-        width: 300px;
-        height: 400px;
+        aspect-ratio: 2/2.6;
         background: #ffffff;
         border-radius: 3px;
         margin: 0 auto;
@@ -359,4 +340,28 @@ nav a {
 /* ROOT */
 :root {
     --color-background: rgb(30, 30, 65); 
+    --color-button: ;
+    --color-
 }
+
+
+/*
+1037px - media query tablet - checar
+
+    screens: {
+    'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+    'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+    'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+    'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+    '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+
+*/
