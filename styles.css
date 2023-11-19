@@ -25,6 +25,7 @@ header {
 
 .logo {
     width: 40px;
+    filter: drop-shadow(var(--shadow-color));
 }
 
 /* Nav */
@@ -36,22 +37,40 @@ nav ul {
 
 nav li {
     margin-right: 20px;
+    transition: transform 8s ease;
+}
+
+nav li:hover {
+    transform: translateY(-2px);
 }
 
 nav a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+nav ul li:last-child a:hover {
+    color: black;
 }
 
 .cta__call {
     padding: 8px 16px;
     background-color: var(--color-button);
-    border-radius: 5px;
+    border-radius: 50px;
+    box-shadow: var(--shadow-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;;
 }
 
 .cta__call:hover {
     background-color: var(--color-button-hover);
     color: white;
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-color-hover);
 }
 
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ HEROSHOT SECTION ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
@@ -347,11 +366,22 @@ nav a {
 /* ROOT */
 :root {
     --color-background: rgb(30, 30, 65); 
-    --color-button: cornflowerblue;
-    --color-button-hover: rgb(7, 46, 216);
+    --color-button: #2fc1ff;
+    --color-button-hover: hsl(200, 100%, 80%);
     --color-cta: ;
+    --shadow-color: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    --shadow-color-hover: 2px 5px 2px rgba(0, 0, 0, 0.5);
 }
 
+.shade {
+    text-shadow: var(--shadow-color);
+    transition: text-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.shade:hover{
+    text-shadow: var(--shadow-color-hover);
+    transform: translateY(-2px)
+}
 
 /*
 1037px - media query tablet - checar
