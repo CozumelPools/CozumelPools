@@ -10,6 +10,18 @@ body {
     background-color: var(--color-background);
 }
 
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-clip: padding-box;
+    background-color: #002c72;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
 /* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ HEADER ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
 header {
     padding: 1rem;
@@ -365,7 +377,7 @@ nav ul li:last-child a:hover {
 
 /* ROOT */
 :root {
-    --color-background: rgb(30, 30, 65); 
+    --color-background: #9dc3ee; 
     --color-button: #2fc1ff;
     --color-button-hover: hsl(200, 100%, 80%);
     --color-cta: ;
